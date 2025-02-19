@@ -1,64 +1,334 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ポートフォリオ | あなたの名前</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <h1>ポートフォリオ</h1>
-      <ul>
-        <li><a href="#about">自己紹介</a></li>
-        <li><a href="#projects">プロジェクト</a></li>
-        <li><a href="#skills">スキル</a></li>
-        <li><a href="#contact">連絡先</a></li>
-      </ul>
-    </nav>
-  </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>My GitHub Pages Home</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Portfolio</a>
+                </div>
+            </nav>
 
-  <main>
-    <section id="about">
-      <h2>自己紹介</h2>
-      <p>こんにちは！私は[あなたの名前]です。エンジニアを目指して勉強中で、Webアプリケーションの開発を行っています。</p>
-      <p>趣味や興味、自己PRをここに書きましょう。</p>
-    </section>
+            <div class="container mt-5 content">
+                <h1>ようこそ！</h1>
+                <p>このページは、naok-000のポートフォリオサイトです。</p>
 
-    <section id="projects">
-      <h2>プロジェクト</h2>
-      <div class="project">
-        <h3>プロジェクト名1</h3>
-        <p>このプロジェクトについての説明をここに記載してください。</p>
-      </div>
-      <div class="project">
-        <h3>プロジェクト名2</h3>
-        <p>このプロジェクトについての説明をここに記載してください。</p>
-      </div>
-    </section>
+                <!-- 成果物セクション追加 -->
+                <section id="portfolio" class="mt-5">
+                    <h2>成果物</h2>
+                    <p>
+                        制作したアプリケーションの説明とスクリーンショットを掲載しました。
+                        詳細はGitHubリポジトリ及びデプロイ先をご確認ください。
+                    </p>
+                    <div class="row">
+                        <!-- Taskflow Card -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Taskflow</h3>
+                                    <p class="card-text">
+                                      TaskFlow
+                                        は、ユーザーが自分のプロジェクトとタスクを直感的に管理できるタスク管理アプリです。
+                                      <ul>
+                                        <li>各ユーザーはアカウントを作成し、ログインします。</li>
+                                        <li>ユーザーはプロジェクトを作成し、そのプロジェクトに紐付けたタスクを追加、編集、削除することができます。</li>
+                                        <li>タスクは「未着手」、「進行中」、「完了」の状態で管理でき、進捗状況を簡単に確認できます。</li>
+                                      </ul>
+                                  
+                                    </p>
 
-    <section id="skills">
-      <h2>スキル</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>React, Vue.js</li>
-        <li>Node.js, Express</li>
-        <li>Git, GitHub</li>
-      </ul>
-    </section>
+                                    <!-- Taskflow Carousel -->
+                                    <div
+                                        id="carouselTaskflow"
+                                        class="carousel slide mb-3"
+                                    >
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img
+                                                    src="images/taskflow_1.png"
+                                                    class="d-block w-100"
+                                                    alt="Taskflow Screenshot 1"
+                                                />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="images/taskflow_2.png"
+                                                    class="d-block w-100"
+                                                    alt="Taskflow Screenshot 2"
+                                                />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="images/taskflow_3.png"
+                                                    class="d-block w-100"
+                                                    alt="Taskflow Screenshot 3"
+                                                />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="images/taskflow_4.png"
+                                                    class="d-block w-100"
+                                                    alt="Taskflow Screenshot 4"
+                                                />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="images/taskflow_5.png"
+                                                    class="d-block w-100"
+                                                    alt="Taskflow Screenshot 5"
+                                                />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="images/taskflow_6.png"
+                                                    class="d-block w-100"
+                                                    alt="Taskflow Screenshot 6"
+                                                />
+                                            </div>
+                                            <!-- 必要に応じて追加 -->
+                                        </div>
+                                        <button
+                                            class="carousel-control-prev button-danger"
+                                            type="button"
+                                            data-bs-target="#carouselTaskflow"
+                                            data-bs-slide="prev"
+                                        >
+                                            <span
+                                                class="carousel-control-prev-icon"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span class="visually-hidden"
+                                                >Previous</span
+                                            >
+                                        </button>
+                                        <button
+                                            class="carousel-control-next"
+                                            type="button"
+                                            data-bs-target="#carouselTaskflow"
+                                            data-bs-slide="next"
+                                        >
+                                            <span
+                                                class="carousel-control-next-icon"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span class="visually-hidden"
+                                                >Next</span
+                                            >
+                                        </button>
+                                    </div>
 
-    <section id="contact">
-      <h2>連絡先</h2>
-      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">https://github.com/yourusername</a></p>
-    </section>
-  </main>
+                                    <a
+                                        href="https://github.com/naok-000/taskflow"
+                                        class="btn btn-primary"
+                                        target="_blank"
+                                        >GitHub リポジトリ</a
+                                    >
+                                    <a
+                                        href="https://taskflow-qoay.onrender.com/"
+                                        class="btn btn-secondary ms-2"
+                                        target="_blank"
+                                        >デプロイ先</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
 
-  <footer>
-    <p>&copy; 2024 あなたの名前</p>
-  </footer>
+                        <!-- Aozora Card -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Aozora</h3>
+                                    <p class="card-text">
+                                        Aozora は，ユーザーが自分の書籍を管理することができるウェブアプリケーションです。
+                                      <ul>
+                                        <li>
+                                          ユーザーは青空文庫データベースから書籍を検索し，登録します．
+                                        </li>
+                                        <li>
+                                          登録した書籍は，自分の書籍一覧に表示され，「未購入」，「未読」，「読書中」，「読了」の状態で管理することができます．
+                                        </li>
+                                      </ul>
+                                    </p>
 
-  <script src="scripts.js"></script>
-</body>
+                                    <!-- Aozora Carousel -->
+                                    <div
+                                        id="carouselAozora"
+                                        class="carousel slide mb-3"
+                                        data-bs-ride="carousel"
+                                    >
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img
+                                                    src="images/aozora_1.png"
+                                                    class="d-block w-100"
+                                                    alt="Aozora Screenshot 1"
+                                                />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="images/aozora_2.png"
+                                                    class="d-block w-100"
+                                                    alt="Aozora Screenshot 2"
+                                                />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="images/aozora_3.png"
+                                                    class="d-block w-100"
+                                                    alt="Aozora Screenshot 3"
+                                                />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="images/aozora_4.png"
+                                                    class="d-block w-100"
+                                                    alt="Aozora Screenshot 4"
+                                                />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    src="images/aozora_5.png"
+                                                    class="d-block w-100"
+                                                    alt="Aozora Screenshot 5"
+                                                />
+                                            </div>
+                                            <!-- 必要に応じて追加 -->
+                                        </div>
+                                        <button
+                                            class="carousel-control-prev"
+                                            type="button"
+                                            data-bs-target="#carouselAozora"
+                                            data-bs-slide="prev"
+                                        >
+                                            <span
+                                                class="carousel-control-prev-icon"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span class="visually-hidden"
+                                                >Previous</span
+                                            >
+                                        </button>
+                                        <button
+                                            class="carousel-control-next"
+                                            type="button"
+                                            data-bs-target="#carouselAozora"
+                                            data-bs-slide="next"
+                                        >
+                                            <span
+                                                class="carousel-control-next-icon"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span class="visually-hidden"
+                                                >Next</span
+                                            >
+                                        </button>
+                                    </div>
+
+                                    <a
+                                        href="https://github.com/naok-000/aozora"
+                                        class="btn btn-primary"
+                                        target="_blank"
+                                        >GitHub リポジトリ</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 成果物セクションここまで -->
+                <!-- 使用できる技術スタック セクション -->
+                <section id="tech" class="mt-5">
+                    <h2 class="mb-4">使用できる技術スタック</h2>
+                    <div class="row justify-content-center">
+                        <!-- Python -->
+                        <div class="col-md-2 col-4 text-center mb-4">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                class="img-fluid"
+                                alt="Python"
+                            />
+                            <p class="mt-2">
+                                <strong>Python</strong><br />
+                                <small>3年 (大学: Web/データ分析)</small>
+                            </p>
+                        </div>
+                        <!-- C, C++ -->
+                        <div class="col-md-2 col-4 text-center mb-4">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                                class="img-fluid"
+                                alt="C"
+                            />
+                            <p class="mt-2">
+                                <strong>C, C++</strong><br />
+                                <small>3年 (大学: アルゴリズム等)</small>
+                            </p>
+                        </div>
+                        <!-- HTML, CSS -->
+                        <div class="col-md-2 col-4 text-center mb-4">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                class="img-fluid"
+                                alt="HTML5"
+                            />
+                            <p class="mt-2">
+                                <strong>HTML, CSS</strong><br />
+                                <small>半年 (独学)</small>
+                            </p>
+                        </div>
+                        <!-- Javascript -->
+                        <div class="col-md-2 col-4 text-center mb-4">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                class="img-fluid"
+                                alt="Javascript"
+                            />
+                            <p class="mt-2">
+                                <strong>Javascript</strong><br />
+                                <small>半年 (独学)</small>
+                            </p>
+                        </div>
+                        <!-- node.js -->
+                        <div class="col-md-2 col-4 text-center mb-4">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                class="img-fluid"
+                                alt="node.js"
+                            />
+                            <p class="mt-2">
+                                <strong>node.js</strong><br />
+                                <small>半年 (独学: Webアプリ)</small>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="bg-light text-center py-3">
+                <div class="container">
+                    <p>
+                        &copy; 2025
+                        <a
+                            class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+                            href="https://github.com/naok-000"
+                            target="_blank"
+                            >naok-000</a
+                        >
+                        .
+                    </p>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>

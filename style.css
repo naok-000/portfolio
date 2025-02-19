@@ -1,0 +1,26 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+.content {
+    padding-bottom: 60px; /* footerの高さ分余白を追加 */
+}
+footer {
+    width: 100%;
+    height: 60px; /* footerの高さ */
+}
+
+/* カルーセルのボタン */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+}
