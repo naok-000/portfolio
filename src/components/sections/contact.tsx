@@ -28,7 +28,7 @@ export function Contact() {
   return (
     <section id="contact" className="py-24 container mx-auto px-4">
       <h2 className="text-3xl font-bold tracking-tighter mb-12 text-center">
-        <span className="text-primary">&gt;</span> Connect
+        <span className="text-primary">&gt;</span> Contact Me
       </h2>
       <div className="flex justify-center gap-8">
         {socialLinks.map((link) => (
