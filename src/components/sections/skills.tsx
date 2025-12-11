@@ -1,11 +1,11 @@
 import { HexViewer } from "@/components/ui/hex-viewer";
 
 const skillsData = {
-  languages: ["TypeScript", "Rust", "C++", "Python", "Go"],
-  frontend: ["React", "Next.js", "TailwindCSS", "Three.js"],
-  backend: ["Node.js", "PostgreSQL", "Redis", "Docker"],
-  embedded: ["FreeRTOS", "ESP32", "STM32", "I2C/SPI"],
-  tools: ["Git", "Linux", "AWS", "GitHub Actions"],
+  languages: ["C", "C++", "Python", "TypeScript", "C#", "Go"],
+  frontend: ["React", "Vue.js", "Next.js", "Nuxt", "Tailwind CSS", "Vuetify"],
+  backend: ["FastAPI", "Flask", "ASP.NET"],
+  embedded: ["FreeRTOS", "Zephyr", "STM32", "Asm"],
+  tools: ["Git", "GitHub", "Linux", "Docker", "AWS"],
 };
 
 const skillsString = JSON.stringify(skillsData, null, 2);

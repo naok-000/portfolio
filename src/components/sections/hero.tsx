@@ -1,7 +1,16 @@
 import { TerminalWindow } from "@/components/ui/terminal-window";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+
+const profile = {
+  role: ["Student", "Engineer"],
+  specialties: [
+    "Web Development (Full-stack)",
+    "Low-level Programming (C, C++)",
+  ],
+  location: "Nagoya, Japan",
+  status: "Open to work",
+};
 
 export function Hero() {
   return (
@@ -44,16 +53,7 @@ export function Hero() {
             <span className="text-foreground">cat profile.json</span>
           </div>
           <div className="text-primary pl-4 whitespace-pre-wrap">
-            {`{
-  "role": "Engineer",
-  "specialties": [
-    "Web Development (React/Next.js)",
-    "Embedded Systems (C/C++, Rust)",
-    "Low-level Programming"
-  ],
-  "location": "Tokyo, Japan",
-  "status": "Open to work"
-}`}
+            {JSON.stringify(profile, null, 2)}
           </div>
 
           <div className="flex pt-2">
