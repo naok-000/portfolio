@@ -2,26 +2,36 @@ import { TerminalWindow } from "@/components/ui/terminal-window";
 
 const experiences = [
   {
-    period: "2023 - Present",
-    role: "Senior Frontend Engineer",
-    company: "Tech Corp",
-    description: "Leading the frontend team, migrating legacy app to Next.js.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Rust"],
-  },
-  {
-    period: "2020 - 2023",
-    role: "Embedded Systems Engineer",
-    company: "IoT Solutions Inc.",
+    period: "2022.04 - Present",
+    role: "Student of Computer Science",
+    company: "Nagoya University",
     description:
-      "Developed firmware for smart home devices. Optimized power consumption.",
-    stack: ["C", "C++", "FreeRTOS", "Python"],
+      "Pursuing a Bachelor's degree in Computer Science. Learning about algorithms, theoritical computer science, computer architecture, machine learning, and more.",
+    stack: ["C", "C++", "Python", "Haskell"],
   },
   {
-    period: "2018 - 2020",
-    role: "Web Developer",
-    company: "Creative Agency",
-    description: "Built responsive websites for various clients.",
-    stack: ["React", "Gatsby", "WordPress"],
+    period: "2025.03 - 2025.10",
+    role: "Web Developer Intern",
+    company: "UNAIIT Inc.",
+    description:
+      "Developing web applications using modern frameworks and tools. Developed a full-stack web app for construction work from scratch.",
+    stack: ["Flask", "Nuxt", "ASP.NET", "Azure", "Git"],
+  },
+  {
+    period: "2025.04 - Present",
+    role: "Software Platform Researcher",
+    company: "Takada–Matsubara Laboratory",
+    description:
+      "Researching and developing software platforms, especially in embedded computing. Currently working on a NPU scheduler for real-time applications on Microcontrollers.",
+    stack: ["C", "FreeRTOS"],
+  },
+  {
+    period: "2025.10 - Present",
+    role: "Data Science Intern",
+    company: "Matsuo Institute Inc.",
+    description:
+      "Developing software for construction work. Working on RAG system using AWS and FastAPI to provide relevant information from large document datasets.",
+    stack: ["FastAPI", "AWS", "Git", "GitHub"],
   },
 ];
 
