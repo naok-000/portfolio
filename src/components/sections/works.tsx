@@ -3,31 +3,29 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "portfolio-antigravity",
+    title: "portfolio",
     description:
-      "A personal portfolio site with a Geek/Low-level aesthetic. Built with Next.js and Tailwind CSS.",
+      "This portfolio site. A personal website to showcase my projects and skills. Built with Next.js and Tailwind CSS, deployed on GitHub Pages.",
     tags: ["Next.js", "React", "Tailwind", "GitHub Pages"],
-    github: "https://github.com/kobayashinaotaro/portfolio-antigravity",
-    demo: "#",
+    github: "https://github.com/naok-000/portfolio",
+    demo: "https://naok-000.github.io/portfolio/",
     status: "Active",
   },
   {
-    title: "iot-sensor-node",
+    title: "gpu-reservation",
     description:
-      "ESP32-based sensor node for monitoring environmental data. Sends data to MQTT broker.",
-    tags: ["C++", "ESP32", "MQTT", "IoT"],
-    github: "#",
-    demo: null,
+      "A GPU reservation system for shared computing environments. Users can book in natural language; priorities auto-set by purpose. Assignment submitted upon selection as an outstanding student in Matsuo Lab's course.",
+    tags: ["FastAPI", "Nuxt", "SQLite", "Docker", "Foundation LLM"],
     status: "Archived",
   },
   {
-    title: "rust-cli-tool",
+    title: "taskflow",
     description:
-      "A command-line utility written in Rust for processing log files.",
-    tags: ["Rust", "CLI", "Systems Programming"],
-    github: "#",
-    demo: null,
-    status: "Completed",
+      "Simple task management web app. My first full-stack web application, built with Express, EJS, and MongoDB. Features user authentication, task CRUD operations, and responsive design.",
+    tags: ["Express", "EJS", "MongoDB"],
+    github: "https://github.com/naok-000/taskflow",
+    demo: "https://taskflow-qoay.onrender.com/",
+    status: "Archived",
   },
 ];
 
