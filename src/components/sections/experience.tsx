@@ -6,7 +6,7 @@ const experiences = [
     role: "Student of Computer Science",
     company: "Nagoya University",
     description:
-      "Pursuing a Bachelor's degree in Computer Science. Learning about algorithms, theoritical computer science, computer architecture, machine learning, and more.",
+      "Pursuing a Bachelor's degree in Computer Science. Learning about algorithms, theoretical computer science, computer architecture, machine learning, and more.",
     stack: ["C", "C++", "Python", "Haskell"],
   },
   {
