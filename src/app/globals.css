@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #22c55e;
+  /* Green-500 */
+  --primary-foreground: #000000;
+  --secondary: #f59e0b;
+  /* Amber-500 */
+  --secondary-foreground: #000000;
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
+  --border: #333333;
+  --card: #111111;
+  --card-foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --font-sans: var(--font-geist-mono);
+  /* Use Mono as default for Geek vibe */
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar for Webkit */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
