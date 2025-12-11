@@ -1,5 +1,5 @@
 import { TerminalWindow } from "@/components/ui/terminal-window";
-import { Button } from "@/components/ui/button"; // Wait, I don't have a Button component yet. I should create one or just use HTML button for now.
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 

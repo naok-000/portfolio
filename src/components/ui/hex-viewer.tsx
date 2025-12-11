@@ -8,8 +8,8 @@ interface HexViewerProps {
 
 export function HexViewer({ data, className }: HexViewerProps) {
   // Convert string to hex representation
-  const getHex = (str: string) => {
-    const hex = [];
+  const getHex = (str: string): string[] => {
+    const hex: string[] = [];
     for (let i = 0; i < str.length; i++) {
       hex.push(str.charCodeAt(i).toString(16).padStart(2, "0"));
     }
@@ -17,7 +17,7 @@ export function HexViewer({ data, className }: HexViewerProps) {
   };
 
   const hexData = getHex(data);
-  const rows = [];
+  const rows: { offset: string; hex: string[]; text: string }[] = [];
   const bytesPerRow = 16;
 
   for (let i = 0; i < hexData.length; i += bytesPerRow) {
