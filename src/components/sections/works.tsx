@@ -5,7 +5,7 @@ const projects = [
   {
     title: "portfolio",
     description:
-      "This portfolio site. A personal website to showcase my projects and skills. Built with Next.js and Tailwind CSS, deployed on GitHub Pages.",
+      "My personal portfolio website to showcase my projects and skills. Built with Next.js and Tailwind CSS, deployed on GitHub Pages.",
     tags: ["Next.js", "React", "Tailwind", "GitHub Pages"],
     github: "https://github.com/naok-000/portfolio",
     demo: "https://naok-000.github.io/portfolio/",
@@ -14,14 +14,14 @@ const projects = [
   {
     title: "gpu-reservation",
     description:
-      "A GPU reservation system for shared computing environments. Users can book in natural language; priorities auto-set by purpose. Assignment submitted upon selection as an outstanding student in Matsuo Lab's course.",
+      "A GPU reservation system for shared computing environments. Users can book in natural language; priorities auto-set by purpose. Selected as an outstanding project in Matsuo Lab's course.",
     tags: ["FastAPI", "Nuxt", "SQLite", "Docker", "Foundation LLM"],
     status: "Archived",
   },
   {
     title: "taskflow",
     description:
-      "Simple task management web app. My first full-stack web application, built with Express, EJS, and MongoDB. Features user authentication, task CRUD operations, and responsive design.",
+      "A simple task management web app. My first full-stack web application, built with Express, EJS, and MongoDB. Features user authentication, task CRUD operations, and responsive design.",
     tags: ["Express", "EJS", "MongoDB"],
     github: "https://github.com/naok-000/taskflow",
     demo: "https://taskflow-qoay.onrender.com/",
