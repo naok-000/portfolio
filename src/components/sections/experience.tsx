@@ -5,6 +5,7 @@ const experiences = [
     period: "2022.04 - Present",
     role: "Student of Computer Science",
     company: "Nagoya University",
+    url: "https://www.nagoya-u.ac.jp",
     description:
       "Pursuing a Bachelor's degree in Computer Science. Learning about algorithms, theoretical computer science, computer architecture, machine learning, and more.",
     stack: ["C", "C++", "Python", "Haskell"],
@@ -13,6 +14,7 @@ const experiences = [
     period: "2025.03 - 2025.10",
     role: "Web Developer Intern",
     company: "UNAIIT Inc.",
+    url: "https://unaiit.com",
     description:
       "Developed web applications using modern frameworks and tools. Developed a full-stack web app for the construction industry from scratch.",
     stack: ["Flask", "Nuxt", "ASP.NET", "Azure", "Git"],
@@ -21,6 +23,7 @@ const experiences = [
     period: "2025.04 - Present",
     role: "Software Platform Researcher",
     company: "Takada–Matsubara Laboratory",
+    url: "https://www.ertl.jp",
     description:
       "Researching and developing software platforms, especially in embedded computing. Currently working on an NPU scheduler for real-time applications on Microcontrollers.",
     stack: ["C", "FreeRTOS"],
@@ -29,6 +32,7 @@ const experiences = [
     period: "2025.10 - Present",
     role: "Data Science Intern",
     company: "Matsuo Institute Inc.",
+    url: "https://matsuo-institute.com",
     description:
       "Developing software for the construction industry. Working on a RAG system using AWS and FastAPI to provide relevant information from large document datasets.",
     stack: ["FastAPI", "AWS", "Git", "GitHub"],
@@ -56,7 +60,14 @@ export function Experience() {
                     [{exp.period}]
                   </span>
                   <span className="text-primary font-bold">{exp.role}</span>
-                  <span className="text-muted-foreground">@ {exp.company}</span>
+                  <a
+                    href={exp.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary transition-colors underline-offset-4 hover:underline"
+                  >
+                    @ {exp.company}
+                  </a>
                 </div>
                 <p className="text-foreground/80 mb-2">{exp.description}</p>
                 <div className="flex flex-wrap gap-2">
