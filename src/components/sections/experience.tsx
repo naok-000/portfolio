@@ -14,7 +14,7 @@ const experiences = [
     role: "Web Developer Intern",
     company: "UNAIIT Inc.",
     description:
-      "Developing web applications using modern frameworks and tools. Developed a full-stack web app for construction work from scratch.",
+      "Developed web applications using modern frameworks and tools. Developed a full-stack web app for the construction industry from scratch.",
     stack: ["Flask", "Nuxt", "ASP.NET", "Azure", "Git"],
   },
   {
@@ -22,7 +22,7 @@ const experiences = [
     role: "Software Platform Researcher",
     company: "Takada–Matsubara Laboratory",
     description:
-      "Researching and developing software platforms, especially in embedded computing. Currently working on a NPU scheduler for real-time applications on Microcontrollers.",
+      "Researching and developing software platforms, especially in embedded computing. Currently working on an NPU scheduler for real-time applications on Microcontrollers.",
     stack: ["C", "FreeRTOS"],
   },
   {
@@ -30,7 +30,7 @@ const experiences = [
     role: "Data Science Intern",
     company: "Matsuo Institute Inc.",
     description:
-      "Developing software for construction work. Working on RAG system using AWS and FastAPI to provide relevant information from large document datasets.",
+      "Developing software for the construction industry. Working on a RAG system using AWS and FastAPI to provide relevant information from large document datasets.",
     stack: ["FastAPI", "AWS", "Git", "GitHub"],
   },
 ];
